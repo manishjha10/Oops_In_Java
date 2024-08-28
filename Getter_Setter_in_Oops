@@ -1,0 +1,36 @@
+//  class Employ{   //  setter --> Set the values  , Get --> get the Values .
+//    private int age ;
+//    String name ;
+//    public void setAge(int yourAge) {
+//        age = yourAge ;
+//    }
+//    public int getAge(){
+//        return age ;
+//    }
+//}
+
+class Play {
+    private int player;
+    private String sport;
+
+    public void setPlayer(int yourage) {
+        player = yourage ;
+    }
+    public int getPalyer(){
+        return player  ;
+    }
+}
+    class oops1 {
+    public static void main(String[] args) {
+//        Employ e = new Employ();
+//        //  e.age = 25 ;    This private so we cannot acess with the help of .operator we require a geters and setters .
+//        e.setAge(25) ;     // To set the Setter .
+//        System.out.println(e.getAge());
+
+
+        Play p = new Play() ;
+        p.setPlayer(11) ;
+        System.out.println("Player Of Team is :" + p.getPalyer());
+    }
+}
+
