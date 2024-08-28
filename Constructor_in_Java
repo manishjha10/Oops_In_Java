@@ -1,0 +1,61 @@
+class Sphere {          // Sphere 
+   private  int radius ;
+   private  int height ;  //  To emplement the getters and setters .
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+    public int volumeSphere(){
+        return (int)((4/3)*(Math.PI)*(radius*radius*radius)) ;
+    }
+
+    public int SurfaceAreaSphere(){
+        return (int)(4*(Math.PI)*(radius*radius)) ;
+    }
+
+    // Make contructor Sphere
+    public int Sphere(int r , int h){
+        this.radius  =  r  ;
+        this.height =  h ;
+        return radius* height  ;
+    }
+     public Sphere(){
+        this.radius = 5 ;
+        this.height = 11 ;
+
+    }
+}
+
+
+public class Constructor_Ex_spher {
+    public static void main(String[] args) {
+    Sphere sp =  new Sphere() ;
+
+//    sp.setRadius(5);
+//    sp.setHeight(10) ;
+
+    int n =  sp.getRadius();
+    int m =  sp.getHeight();
+    System.out.println(n);
+    System.out.println(m);
+    System.out.println(n*m);
+
+    System.out.println(sp.volumeSphere());
+    System.out.println(sp.SurfaceAreaSphere());
+
+    System.out.println(sp.Sphere(2,3));
+
+    }
+}
